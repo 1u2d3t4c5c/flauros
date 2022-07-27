@@ -1,0 +1,414 @@
+* {
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:root {
+  --blanco : #fff;
+}
+
+body {
+	color: var(--blanco);
+	font-family: "Open sans", sans-serif;
+	background: #E0F2F7;
+}
+
+/* naranja: #fb8500
+   celeste: #0096c7
+   azul: #0077b6 */
+
+/* ------------------------- NAV --------------------------------------- */
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.contenedorNav {
+	padding: 30px 50px;
+	background: #fff;
+	box-shadow: 1px 0px 10px #000;
+}
+.contenedorNav div {
+	display: inline-block;
+}
+.contenedorNav .icono p{
+	color: #000;
+	font-size: 30px;
+	font-weight: bold;
+	margin-left: 5px;
+	display: inline-block;
+	vertical-align: middle;
+}
+.contenedorNav .icono img{
+	width: 40px;
+	vertical-align: middle;
+}
+.contenedorNav nav a {
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px 0px;
+	font-size: 20px;
+	color: #0096c7;
+}
+.contenedorNav nav a:hover {
+	border-bottom: 5px solid #0096c7;
+}
+
+/* ------------------------- HEADER --------------------------------------- */
+
+header {
+	background: url(../img/fondo2.jpg) center;
+	background-size: cover;
+	padding-bottom: 200px;
+}
+.contenidoHeader {
+	margin-top: 200px;
+	text-align: center;
+}
+.contenidoHeader h1{
+	font-size: 80px;
+	padding: 0px 100px;
+	color: #fff;
+	/*text-shadow: 1.5px 0px 10px #000;*/
+	font-family: "Avenir", "Open sans", sans-serif;
+}
+.contenidoHeader .titulo {
+	font-size: 50px;
+	font-weight: lighter;
+}
+.contenidoHeader p{
+	font-size: 25px;
+}
+
+/* ------------------------- ACERCA DE --------------------------------------- */
+
+.acercaDe {
+	text-align: center;
+	background: #fff;
+}
+.contenedorAcercade {
+	text-align: center;
+	padding: 40px 20px;
+}
+.contenedorAcercade h2 {
+	font-size: 50px;
+	margin-bottom: 30px;
+	color: #003049;
+	text-align: center;
+}
+.contenedorAcercade img {
+	width: 300px;
+	margin-bottom: 30px;
+}
+.contenedorAcercade p {
+	font-size: 20px;
+	margin: 0px 100px 30px 100px;
+	color: #003049;
+}
+
+/* ------------------------- JUEGOS --------------------------------------- */
+
+.contenedor {
+	padding: 100px 50px;
+	position: relative;
+}
+.contenedor h2 {
+	text-align: center;
+	font-size: 50px;
+	margin-bottom: 50px;
+	color: #003049;
+}
+.juego {
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 30px;
+	/*box-shadow: 0px 2px 8px #000;*/
+}	
+.juego img {
+	width: 60px;
+	border-radius: 50%;
+	vertical-align: middle;
+	margin-left: 50px;
+}
+.juego h3 {
+	display: inline-block;
+	flex-basis: 980px;
+}
+.mostrar {
+	text-decoration: none;
+	border: none;
+	font-size: 50px;
+	color: #fff;
+	font-family: "Open Sans", sans-serif;
+	font-weight: 100;
+	margin: 0px 50px;
+}
+.mostrar:hover {
+	cursor: pointer;
+}
+.contenido {
+	padding: 0px 40px 60px 40px;
+	border-top: 3px solid #E0F2F7;
+	/*box-shadow: 0px 2px 8px #000;*/
+}
+.contenido .descripcion {
+	margin-top: 40px;
+	font-size: 25px;
+}
+.contenido .categorias {
+	margin: 30px 0px;
+	font-size: 15px;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 7px;
+	border-radius: 10px;
+	border: 3px solid #fff;
+}
+.contenido .info {
+	margin: 20px 0px 30px 0px;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: 100;
+}
+.primera {
+	border-radius: 15px 15px 0px 0px;
+}
+.grupo-1 {
+	background: #9b5de5;}
+
+.grupo-2 {
+	background: #f15bb5;
+}
+.grupo-3 {
+	background: #ff9770;
+*/}
+
+.grupo-4 {
+	background: #00bbf9;
+}
+.rotar {
+	transform: rotate(45deg);
+}
+
+/* ----------------------- CAROUSEL ------------------------------ */
+
+.fotos, .menu {
+	justify-content: center;
+}
+
+.carousel {
+	/*margin-bottom: 30px;*/
+}
+
+.fotos {
+	position: relative;
+    max-width: 1200px;
+    width: 100%;
+    height: 500px;
+}
+
+.fotos li {
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+.fotos li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    background: #fff;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu{
+	position: relative;
+    text-align: center;
+	bottom: 30px;
+    padding: 0px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    padding: 0px;
+}
+
+.menu li button{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+.menu li button:hover {
+    background-color: #007ed3;
+    cursor: pointer;
+}
+.actual {
+    background: #007ed3;
+}
+
+/* ----------------------- DESCARGAS ------------------------------ */
+
+.descargas {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+.descargas a {
+	text-decoration: none;
+	padding: 30px;
+	border: 3px solid #fff;
+	border-radius: 5px;
+	background: #04B404;
+	font-size: 20px;
+	color: #fff;
+	width: 48%;
+}
+
+.descargas a:hover {
+	background: #088A08;
+}
+
+/* ----------------------- SERVICIOS ------------------------------ */
+
+.servicios {
+	padding: 100px 50px;
+	background: #003049;
+}
+.servicios h2 {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+}
+.contenedorServicios {
+	display: flex;
+	justify-content: space-around;
+}
+.servicio {
+	text-align: center;
+	margin: 0px 20px;
+	padding: 30px 20px;
+	border-radius: 15px;
+	border: 3px solid #fff;
+	width: 30%;
+}
+.servicio img {
+	width: 100px;
+}
+.servicio h3 {
+	margin: 20px 0px;
+	font-size: 25px;
+}
+.servicio p {
+	font-size: 20px;
+}
+
+/* ----------------------- CONTACTO ------------------------------ */
+
+.contacto {
+	padding: 100px 50px;
+}
+.contacto h2 {
+	font-size: 50px;
+	text-align: center;
+	margin-bottom: 50px;
+	color: #003049;
+}
+.contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"],
+.contacto .formulario textarea {
+      border: 2px solid #848484;
+      border-radius: 5px;
+      padding: 15px 20px;
+      font-size: 20px;
+      color: #000; 
+}
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"] {
+      width: 49%;
+      margin-bottom: 15px; 
+}
+.contacto .formulario textarea {
+      width: 100%;
+      height: 100px;
+      min-width: 100%;
+      margin-bottom: 15px;
+      min-height: 100px;
+      max-height: 300px;
+      font-family: "Open sans";
+}
+.contacto .formulario .boton {
+      margin: auto;
+      background: #3895ea;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      padding: 15px 40px;
+}
+.contacto .formulario .boton:hover {
+        background: #387bea; 
+        cursor: pointer;
+}
+.contacto .formulario input[type="text"]:focus, .contacto .formulario input[type="email"]:focus, .contacto .formulario textarea:focus {
+	border: none;
+	outline: 3px solid #0B0B61;
+}
+
+/* ----------------------- REDES ------------------------------ */
+
+footer .redes{
+	text-align: center;
+	padding: 50px 0px;
+	background: #003049;
+}
+.redes a {
+	margin: 0px 40px;
+}
+.redes img {
+	width: 50px;
+	padding: 10px;
+}
+.redes img:hover {
+	padding: 5px;
+}
+
+/* ----------------------- AUTOR ------------------------------ */
+
+footer .autor {
+	padding: 10px;
+	background: #000;
+}
+footer p {
+	font-size: 15px;
+	text-align: center;
+}
+footer a {
+	text-decoration: none;
+	color: #fff;
+}
