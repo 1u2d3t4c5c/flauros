@@ -15,9 +15,6 @@ body {
 	background: #E0F2F7;
 }
 
-/* naranja: #fb8500
-   celeste: #0096c7
-   azul: #0077b6 */
 
 /* ------------------------- NAV --------------------------------------- */
 
@@ -60,7 +57,7 @@ nav {
 /* ------------------------- HEADER --------------------------------------- */
 
 header {
-	background: url(../img/fondo2.jpg) center;
+	background: url(../img/fondo.jpg) center;
 	background-size: cover;
 	padding-bottom: 200px;
 }
@@ -72,7 +69,6 @@ header {
 	font-size: 80px;
 	padding: 0px 100px;
 	color: #fff;
-	/*text-shadow: 1.5px 0px 10px #000;*/
 	font-family: "Avenir", "Open sans", sans-serif;
 }
 .contenidoHeader .titulo {
